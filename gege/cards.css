@@ -1,0 +1,20 @@
+#carousell {
+    padding: 10px;
+}
+
+#cards {
+    width: 1600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+#cards div {
+    width: 30vh;
+    height: 35vh;
+    background-color: var(--tertriary-color);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}

@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  
+}
+
+#card h2 {
+  margin-bottom: 0.5rem;
+  color: #343a40;
+}
+
+#card p {
+  color: #555;
+  line-height: 1.5;
+}
+
+#card img {
+  max-width: 100px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  height: auto;
+}
+
+#card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
