@@ -1,7 +1,5 @@
 <?php
 include './db/index.php';
-
-$query = mysqli_query($conn, "SELECT * FROM products ORDER BY id DESC");
 ?>
 
 <section class="product-list">

@@ -109,9 +109,70 @@ nav ul li a.active::after {
 
 /* ====== Main Content ====== */
 main {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 2rem auto;
   padding: 0 1rem;
+}
+
+/* ====== Hero Section ====== */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  color: var(--product-card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.hero #logo img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform var(--transition-speed);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  cursor: default;
+}
+
+.hero h1 a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+  cursor: pointer;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  cursor: default;
+}
+
+.hero p::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: var(--product-card-bg);
+  margin-top: 0.5rem;
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
 }
 
 /* ====== Product List Section ====== */
@@ -173,6 +234,146 @@ main {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
+
+/* ====== Profile Card ====== */
+.profile-card {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem 0;
+  background-color: var(--background-color);
+}
+
+.profile {
+  background-color: var(--product-card-bg);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  width: 260px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-speed),
+    box-shadow var(--transition-speed);
+}
+
+.profile img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  transition: transform var(--transition-speed);
+}
+
+.profile:hover img {
+  transform: scale(1.05);
+}
+
+.profile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.profile h3 {
+  color: var(--heading-text-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.profile p {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* ====== Carousel Section ====== */
+.carousel-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Navigation buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.3em 0.6em;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+/* Dots */
+.carousel-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
 
 /* ====== Footer ====== */
 footer {

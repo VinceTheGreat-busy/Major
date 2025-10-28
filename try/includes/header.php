@@ -7,6 +7,7 @@
     <title>The Comfort Blend</title>
     <link rel="icon" href="/asset/8.svg" style="border-radius:50%">
     <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="/style/carousel.css">
 </head>
 
 <body>
