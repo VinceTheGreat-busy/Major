@@ -8,5 +8,10 @@
   },
   "author": "Vince Palaming",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "ini": "^6.0.0",
+    "init": "^0.1.2",
+    "react-router-dom": "^7.9.5"
+  }
 }

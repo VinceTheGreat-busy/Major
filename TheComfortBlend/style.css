@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --primary-color: #ffff;
+    --secondary-color: #1adfdf;
+    --bg-color: rgb(73, 96, 223);
+    --text-color: #000000;
+    --shadow-color: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    gap: 10px;
+    background-color: var(--bg-color);
+}
+
+header {
+    grid-area: header;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+header nav {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: inline;
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header ul li button {
+    font-size: 18px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+header ul li button::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: var(--bg-color);
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 0.2s ease;
+}
+
+header ul li button:hover::after {
+    transform: scaleX(1);
+}
+
+header ul li button:hover {
+    color: var(--bg-color);
+}
+
+main {
+    grid-area: main;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    box-shadow: var(--shadow-color);
+}
+
+.parent {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.child1 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5px 10px;
+    gap: 20px;
+}
+
+.child2 {
+    padding: 10px 5px;
+}
+
+footer {
+    grid-area: footer;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
